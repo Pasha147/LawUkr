@@ -28,10 +28,10 @@
     }
   }
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   .contacts {
-    font-size: 1.5rem;
+    font-size: 2rem;
     .item {
       margin: 0 auto;
       width: 70%;
@@ -41,21 +41,7 @@
     .contacts_logo {
       display: inline-block;
       margin: 0.25rem;
-      width: 2.5rem;
-    }
-  }
-}
-
-.linecont {
-  margin: 1rem auto;
-  width: 100%;
-  .line {
-    margin: 0 auto;
-    height: 2px;
-    width: 90%;
-    background: white;
-    &::after {
-      content: "";
+      width: 2.25rem;
     }
   }
 }

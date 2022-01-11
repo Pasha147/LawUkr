@@ -1,4 +1,19 @@
 <!-- <app-main></app-main> -->
 <div class="container">
   <router-outlet></router-outlet>
+  <nav class="menu" [class.menuOn]="menuOn">
+    <div class="menuListCont">
+      <ul class="menu__list">
+        <li *ngFor="let navItem of navIt">
+          <a routerLink="{{ navItem.path }}" (click)="menuBtn()">{{
+            navItem.title
+          }}</a>
+          <div class="linecont">
+            <div class="line"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button class="menuBtn" (click)="menuBtn()">{{ btnStr }}</button>
+  </nav>
 </div>
