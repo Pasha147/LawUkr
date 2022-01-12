@@ -1,0 +1,48 @@
+.consultCont {
+  //   background: rgb(209, 175, 236);
+  background: rgb(152, 205, 221);
+  color: #ffffff;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  header {
+    margin-bottom: 1rem;
+    h1 {
+      text-shadow: 0 0 2px #ffffff;
+    }
+  }
+  .intro {
+    font-size: 2rem;
+  }
+  form {
+    input,
+    textarea {
+      font-size: 1.5rem;
+      border-radius: 2px;
+      margin: 0.25rem auto;
+      width: 90%;
+      resize: none;
+      box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(98, 65, 126, 0.39);
+    }
+    button {
+      margin-top: 00.5rem;
+      font-size: 1.5rem;
+      padding: 00.5rem;
+      border-radius: 4px;
+      //   background: rgb(129, 92, 160);
+      background: rgb(87, 149, 168);
+
+      color: white;
+      border: 1px solid rgb(60, 101, 114);
+      box-shadow: 0 0 0.2rem 0.1rem rgb(87, 149, 168);
+    }
+  }
+
+  .linecont {
+    margin: 0.5rem auto;
+    .line {
+      border-radius: 2px;
+      box-shadow: 0 0 0.2rem 0.2rem rgba(255, 255, 255, 0.651);
+    }
+  }
+}

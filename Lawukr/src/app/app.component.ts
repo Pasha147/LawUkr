@@ -25,7 +25,7 @@ export class AppComponent {
 
   navIt: Page[] = [
     { title: 'Головна', path: 'main' },
-    { title: 'Юридична консультація', path: 'edexp' },
+    { title: 'Юридична консультація', path: 'consultation' },
     { title: 'Освіта та досвід', path: 'edexp' },
     { title: 'Нагороди', path: 'awards' },
     { title: 'Про мене', path: 'edexp' },
