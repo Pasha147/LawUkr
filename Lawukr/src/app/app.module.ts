@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { EducationExperienceComponent } from './education-experience/education-experience.component';
 import { AwardsComponent } from './awards/awards.component';
 import { ConsultationComponent } from './consultation/consultation.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ConsultationComponent } from './consultation/consultation.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

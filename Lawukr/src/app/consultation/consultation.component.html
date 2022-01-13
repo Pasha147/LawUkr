@@ -8,17 +8,40 @@
       <div class="line"></div>
     </div>
     <p class="intro">Заповніть форму:</p>
-    <form>
-      <input type="text" placeholder="ПІБ" />
-      <input type="text" placeholder="Ваша дата народження" />
-      <input type="text" placeholder="Електронна пошта" />
-      <input type="text" placeholder="Телефон" />
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+      <input
+        type="text"
+        placeholder="ПІБ"
+        name="pib"
+        [(ngModel)]="formData.name"
+        required
+        minlength="2"
+      />
+      <input
+        type="text"
+        placeholder="Ваша дата народження"
+        name="date"
+        [(ngModel)]="formData.date"
+      />
+      <input
+        type="text"
+        placeholder="Електронна пошта"
+        name="email"
+        [(ngModel)]="formData.email"
+      />
+      <input
+        type="text"
+        placeholder="Телефон"
+        name="phone"
+        [(ngModel)]="formData.phone"
+      />
       <textarea
-        name="message"
-        id=""
+        id="text"
         cols="30"
         rows="7"
         placeholder="Повідомлення"
+        name="text"
+        [(ngModel)]="formData.text"
       ></textarea>
       <button type="submit">Відправити</button>
     </form>

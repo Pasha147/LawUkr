@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { Page } from './interfaces';
 
-interface Page {
-  title: string;
-  path: string;
-}
+// interface Page {
+//   title: string;
+//   path: string;
+// }
 
 @Component({
   selector: 'app-root',
