@@ -13,10 +13,7 @@ export class ConsultationComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  val1 = '';
-  val2 = '';
-
- formData: ConsultForm = {
+  formData: ConsultForm = {
     name: '',
     date: '',
     email: '',
@@ -24,21 +21,20 @@ export class ConsultationComponent implements OnInit {
     text: '',
   };
 
-
-
   @ViewChild('myForm') form: any;
 
-onSubmit(obj:any):void{
-  console.log(obj);
-  this.send()
-}
+  onSubmit(obj: any): void {
+    console.log(obj.form.value);
 
- 
-
-  send(): void {
-    let resp: string = '';
     this.getPost.postForm(this.formData).subscribe((a) => {
       console.log('a>', a);
+      this.formData = {
+        name: '',
+        date: '',
+        email: '',
+        phone: '',
+        text: '',
+      };
     });
   }
 }
