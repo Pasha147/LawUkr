@@ -21,10 +21,10 @@ export class ConsultationComponent implements OnInit {
     text: '',
   };
 
-  @ViewChild('myForm') form: any;
+  // @ViewChild('myForm') form: any;
 
-  onSubmit(obj: any): void {
-    console.log(obj.form.value);
+  onSubmit(): void {
+    // console.log(obj.form.value);
 
     this.getPost.postForm(this.formData).subscribe((a) => {
       console.log('a>', a);
