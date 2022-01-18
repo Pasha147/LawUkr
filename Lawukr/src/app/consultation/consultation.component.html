@@ -8,7 +8,7 @@
       <div class="line"></div>
     </div>
     <p class="intro">Заповніть форму:</p>
-    <form (ngSubmit)="onSubmit()">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm, myInput)">
       <input
         type="text"
         placeholder="ПІБ"
@@ -21,10 +21,13 @@
         type="text"
         placeholder="Ваша дата народження"
         name="date"
-        [(ngModel)]="formData.date"
+        [(ngModel)]="formData.bearthday"
       />
       <input
-        type="text"
+        #myInput="ngModel"
+        ngModel
+        email="true"
+        type="email"
         placeholder="Електронна пошта"
         name="email"
         [(ngModel)]="formData.email"

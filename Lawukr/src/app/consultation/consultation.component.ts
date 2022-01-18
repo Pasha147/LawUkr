@@ -15,22 +15,25 @@ export class ConsultationComponent implements OnInit {
 
   formData: ConsultForm = {
     name: '',
-    date: '',
+    bearthday: '',
     email: '',
     phone: '',
     text: '',
   };
 
-  // @ViewChild('myForm') form: any;
+  @ViewChild('myForm') form: any;
+  @ViewChild('myInput') forme:any;
 
-  onSubmit(): void {
-    // console.log(obj.form.value);
+  onSubmit(obj:any, inp:any): void {
+  //  console.log(obj.form.invalid);
+  //  console.log(inp.valid);
+   
 
     this.getPost.postForm(this.formData).subscribe((a) => {
       console.log('a>', a);
       this.formData = {
         name: '',
-        date: '',
+        bearthday: '',
         email: '',
         phone: '',
         text: '',

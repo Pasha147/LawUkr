@@ -1,6 +1,6 @@
 export interface ConsultForm {
   name: string;
-  date: string;
+  bearthday: string;
   email: string;
   phone: string;
   text: string;
