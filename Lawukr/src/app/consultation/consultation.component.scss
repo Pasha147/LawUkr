@@ -24,6 +24,11 @@
       resize: none;
       box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(98, 65, 126, 0.39);
     }
+
+    .ng-invalid {
+      background: rgb(221, 112, 136);
+    }
+
     button {
       margin-top: 00.5rem;
       font-size: 1.5rem;
@@ -35,6 +40,8 @@
       color: white;
       border: 1px solid rgb(60, 101, 114);
       box-shadow: 0 0 0.2rem 0.1rem rgb(87, 149, 168);
+    }
+    .inpEmail {
     }
   }
 

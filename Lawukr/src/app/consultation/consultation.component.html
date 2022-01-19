@@ -8,7 +8,9 @@
       <div class="line"></div>
     </div>
     <p class="intro">Заповніть форму:</p>
-    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm, myInput)">
+    <!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm, myInput)"> -->
+    {{ formData | json }}
+    <form #myForm="ngForm" (ngSubmit)="onSubmit()">
       <input
         type="text"
         placeholder="ПІБ"
@@ -22,8 +24,13 @@
         placeholder="Ваша дата народження"
         name="date"
         [(ngModel)]="formData.bearthday"
+        autocomplete="off"
       />
+      <!-- {{ spy.className | json }} -->
       <input
+        #spy="ngModel"
+        autocomplete="off"
+        required
         #myInput="ngModel"
         ngModel
         email="true"
@@ -31,7 +38,10 @@
         placeholder="Електронна пошта"
         name="email"
         [(ngModel)]="formData.email"
+        class="inpEmail"
       />
+      <div [hidden]="spy.valid">adfadfadfafd</div>
+
       <input
         type="text"
         placeholder="Телефон"

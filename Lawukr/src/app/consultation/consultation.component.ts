@@ -21,23 +21,25 @@ export class ConsultationComponent implements OnInit {
     text: '',
   };
 
-  @ViewChild('myForm') form: any;
-  @ViewChild('myInput') forme:any;
+  // @ViewChild('myForm') form: any;
+  // @ViewChild('myInput') forme:any;
 
-  onSubmit(obj:any, inp:any): void {
+  // onSubmit(obj:any, inp:any): void {
+  onSubmit(): void {
+  //  console.log(obj);
   //  console.log(obj.form.invalid);
   //  console.log(inp.valid);
    
 
-    this.getPost.postForm(this.formData).subscribe((a) => {
-      console.log('a>', a);
-      this.formData = {
-        name: '',
-        bearthday: '',
-        email: '',
-        phone: '',
-        text: '',
-      };
-    });
+    // this.getPost.postForm(this.formData).subscribe((a) => {
+    //   console.log('a>', a);
+    //   this.formData = {
+    //     name: '',
+    //     bearthday: '',
+    //     email: '',
+    //     phone: '',
+    //     text: '',
+    //   };
+    // });
   }
 }
