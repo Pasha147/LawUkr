@@ -9,7 +9,7 @@
     </div>
     <p class="intro">Заповніть форму:</p>
     <!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm, myInput)"> -->
-    {{ formData | json }}
+    <!-- {{ formData | json }} -->
     <form #myForm="ngForm" (ngSubmit)="onSubmit()">
       <input
         type="text"
@@ -47,6 +47,7 @@
         placeholder="Телефон"
         name="phone"
         [(ngModel)]="formData.phone"
+        pattern="[0-9]{10}"
       />
       <textarea
         id="text"
