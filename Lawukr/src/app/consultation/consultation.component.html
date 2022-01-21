@@ -12,6 +12,7 @@
     <!-- {{ formData | json }} -->
     <form #myForm="ngForm" (ngSubmit)="onSubmit()">
       <input
+        #pib="ngModel"
         type="text"
         placeholder="ПІБ"
         name="pib"
@@ -20,15 +21,17 @@
         minlength="2"
       />
       <input
+        #age="ngModel"
+        required
         type="text"
-        placeholder="Ваша дата народження"
+        placeholder="Рік народження"
+        pattern="[1-2][0-9]{3}"
         name="date"
         [(ngModel)]="formData.bearthday"
-        autocomplete="off"
       />
       <!-- {{ spy.className | json }} -->
       <input
-        #spy="ngModel"
+        #email="ngModel"
         autocomplete="off"
         required
         #myInput="ngModel"
@@ -40,16 +43,20 @@
         [(ngModel)]="formData.email"
         class="inpEmail"
       />
-      <div [hidden]="spy.valid">adfadfadfafd</div>
+      <!-- <div [hidden]="spy.valid">adfadfadfafd</div> -->
 
       <input
+        #phone="ngModel"
+        required
         type="text"
         placeholder="Телефон"
         name="phone"
         [(ngModel)]="formData.phone"
-        pattern="[0-9]{10}"
+        pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
       />
       <textarea
+        #text="ngModel"
+        required
         id="text"
         cols="30"
         rows="7"
@@ -57,7 +64,14 @@
         name="text"
         [(ngModel)]="formData.text"
       ></textarea>
-      <button type="submit">Відправити</button>
+      <button
+        [disabled]="
+          !(pib.valid && age.valid && email.valid && phone.valid && text.valid)
+        "
+        type="submit"
+      >
+        Відправити
+      </button>
     </form>
   </article>
 </div>

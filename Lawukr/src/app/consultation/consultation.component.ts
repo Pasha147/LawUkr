@@ -30,8 +30,8 @@ export class ConsultationComponent implements OnInit {
     //  console.log(obj.form.invalid);
     //  console.log(inp.valid);
 
-    // this.getPost.postForm(this.formData).subscribe((a) => {
-    //   console.log('a>', a);
+    this.getPost.postForm(this.formData).subscribe((a) => {
+      console.log('a>', a);
     //   this.formData = {
     //     name: '',
     //     bearthday: '',
@@ -39,7 +39,18 @@ export class ConsultationComponent implements OnInit {
     //     phone: '',
     //     text: '',
     //   };
-    // });
+    });
+/*
+let regAge= /[1-2][0-9]{3}/
+console.log(this.formData.bearthday);
+
+  if (regAge.test(this.formData.bearthday)) {
+      console.log('bearthday:Yes');
+    } else {
+      console.log('bearthday:No');
+    }
+
+
     let reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
     if (reg.test(this.formData.phone)) {
       console.log('Phone:Yes');
@@ -50,11 +61,12 @@ let regDate=/^([1-9][0-9]?)\\.([1-9][0-9]?)\\.([1-2][0-9]{3})$/;
 let regDate1=/^([0-9]{2})\\.([0-9]{2})\\.([1-2][0-9]{3})$/;
 let regex = new RegExp("^([0-9]{2})\\.([0-9]{2})\\.([1-2][0-9]{3})$");
 
-if(regex.test(this.formData.bearthday))
+if(regDate1.test(this.formData.phone))
 {
-      console.log('Bearthday:Yes');
+      console.log('Phone:Yes');
     } else {
-      console.log('Bearthday:No');
+      console.log('Phone:No');
     }
+    */
   }
 }
