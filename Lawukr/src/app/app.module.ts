@@ -9,6 +9,7 @@ import { AwardsComponent } from './awards/awards.component';
 import { ConsultationComponent } from './consultation/consultation.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     MainComponent,
     EducationExperienceComponent,
     AwardsComponent,
-    ConsultationComponent
+    ConsultationComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

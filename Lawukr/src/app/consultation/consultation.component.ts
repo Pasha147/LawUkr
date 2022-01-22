@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { GetPostService } from '../get-post.service';
 
 import { ConsultForm } from '../interfaces';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-consultation',
@@ -9,7 +10,7 @@ import { ConsultForm } from '../interfaces';
   styleUrls: ['./consultation.component.scss'],
 })
 export class ConsultationComponent implements OnInit {
-  constructor(private getPost: GetPostService) {}
+  constructor(private getPost: GetPostService, private messageServ:MessageService) {}
 
   ngOnInit(): void {}
 
@@ -29,9 +30,14 @@ export class ConsultationComponent implements OnInit {
     //  console.log(obj);
     //  console.log(obj.form.invalid);
     //  console.log(inp.valid);
-
+this.messageServ.add('is sending')
     this.getPost.postForm(this.formData).subscribe((a) => {
       console.log('a>', a);
+      // this.messageServ.clear()
+      this.messageServ.add(a)
+      setTimeout(()=>{
+         this.messageServ.clear()
+      },3000)
     //   this.formData = {
     //     name: '',
     //     bearthday: '',
