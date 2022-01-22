@@ -10,10 +10,13 @@ import { MessageService } from '../message.service';
   styleUrls: ['./consultation.component.scss'],
 })
 export class ConsultationComponent implements OnInit {
-  constructor(private getPost: GetPostService, private messageServ:MessageService) {}
-
+  constructor(
+    private getPost: GetPostService,
+    private messageServ: MessageService
+  ) {}
   ngOnInit(): void {}
 
+  messagesBar: boolean = false;
   formData: ConsultForm = {
     name: '',
     bearthday: '',
@@ -22,31 +25,42 @@ export class ConsultationComponent implements OnInit {
     text: '',
   };
 
-  // @ViewChild('myForm') form: any;
-  // @ViewChild('myInput') forme:any;
-
-  // onSubmit(obj:any, inp:any): void {
   onSubmit(): void {
-    //  console.log(obj);
-    //  console.log(obj.form.invalid);
-    //  console.log(inp.valid);
-this.messageServ.add('is sending')
+    this.messagesBar = true;
+    this.messageServ.add('Повідомлення відправляється...');
     this.getPost.postForm(this.formData).subscribe((a) => {
       console.log('a>', a);
-      // this.messageServ.clear()
-      this.messageServ.add(a)
-      setTimeout(()=>{
-         this.messageServ.clear()
-      },3000)
-    //   this.formData = {
-    //     name: '',
-    //     bearthday: '',
-    //     email: '',
-    //     phone: '',
-    //     text: '',
-    //   };
+      this.messageServ.clear();
+      this.messageServ.add('Повідомлення доставлено');
+      const interv = setTimeout(() => {
+        this.messageServ.clear();
+        this.messagesBar = false;
+      }, 4000);
     });
+  }
+}
+
 /*
+formData: ConsultForm = {
+    name: 'Pasha',
+    bearthday: '1978',
+    email: 'q@q',
+    phone: '1234567890',
+    text: 'Hello',
+  };
+*/
+
+// @ViewChild('myForm') form: any;
+// @ViewChild('myInput') forme:any;
+
+// onSubmit(obj:any, inp:any): void {
+
+//  console.log(obj);
+//  console.log(obj.form.invalid);
+//  console.log(inp.valid);
+
+/*
+    //Валидация через регулярные выражения
 let regAge= /[1-2][0-9]{3}/
 console.log(this.formData.bearthday);
 
@@ -74,5 +88,3 @@ if(regDate1.test(this.formData.phone))
       console.log('Phone:No');
     }
     */
-  }
-}

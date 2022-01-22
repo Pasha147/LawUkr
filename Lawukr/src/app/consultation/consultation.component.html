@@ -64,15 +64,26 @@
         name="text"
         [(ngModel)]="formData.text"
       ></textarea>
-      <button
-        [disabled]="
-          !(pib.valid && age.valid && email.valid && phone.valid && text.valid)
-        "
-        type="submit"
-      >
-        Відправити
-      </button>
+      <div class="messageCont">
+        <div class="message" [class.messageOn]="this.messagesBar">
+          <app-messages></app-messages>
+        </div>
+        <button
+          [disabled]="
+            this.messagesBar ||
+            !(
+              pib.valid &&
+              age.valid &&
+              email.valid &&
+              phone.valid &&
+              text.valid
+            )
+          "
+          type="submit"
+        >
+          Відправити
+        </button>
+      </div>
     </form>
-    <app-messages></app-messages>
   </article>
 </div>

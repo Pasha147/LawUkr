@@ -17,11 +17,7 @@ export class GetPostService {
     let httpOptions = {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
     };
-
-    
-
-    let resp = this.http.post<string>(url, formData, httpOptions);
-    this.messageServ.add('Hello')
+     let resp = this.http.post<string>(url, formData, httpOptions);
     return resp;
   }
 }

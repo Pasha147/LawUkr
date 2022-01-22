@@ -44,6 +44,36 @@
     button:disabled {
       background: rgb(240, 171, 187);
     }
+    .messageCont {
+      position: relative;
+      //   border: 1px solid black;
+      .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        $h: 0rem;
+        opacity: 0;
+        height: $h;
+        bottom: 100%;
+        transition: height, opacity;
+        transition: 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        width: 60%;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        border-radius: 0.5rem;
+        background: rgba(87, 131, 156, 0.774);
+        font-size: 1.5rem;
+      }
+      .messageOn {
+        $h: 7rem;
+        height: $h;
+        opacity: 100%;
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(98, 65, 126, 0.39);
+      }
+    }
+
     .inpEmail {
     }
   }
