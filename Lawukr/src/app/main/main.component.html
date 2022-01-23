@@ -8,21 +8,23 @@
     <div class="line"></div>
   </div>
   <div class="contacts">
-    <div class="phone item messageCont">
+    <div (click)="contactClick('phone')" class="phone item messageCont">
       <div class="message" [class.messageOn]="this.items[0].show">
-        <app-messages></app-messages>
+        <p>{{ this.items[0].message }}</p>
+        <!-- <app-messages></app-messages> -->
       </div>
       <img class="contacts_logo" src="./assets/phone.png" alt="phone" />
-      <span (click)="contactClick('phone')">(068) 701-85-11</span>
+      <span>(068) 701-85-11</span>
     </div>
-    <div class="email item messageCont">
+    <div (click)="contactClick('email')" class="email item messageCont">
       <div class="message" [class.messageOn]="this.items[1].show">
-        <app-messages></app-messages>
+        <p>{{ this.items[1].message }}</p>
+        <!-- <app-messages></app-messages> -->
       </div>
-      <img class="contacts_logo" src="./assets/email.png" alt="phone" />
-      <span (click)="contactClick('email')">oksanazay@ukr.net</span>
+      <img class="contacts_logo" src="./assets/email.png" alt="email" />
+      <span>oksanazay@ukr.net</span>
     </div>
-    <div class="fb item">
+    <div class="fb item messageCont">
       <img class="contacts_logo" src="./assets/fb.png" alt="fb" />
       <a href="https://www.facebook.com/profile.php?id=100011461871034"
         >Oksana</a

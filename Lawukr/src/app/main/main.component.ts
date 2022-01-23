@@ -13,10 +13,6 @@ export class MainComponent implements OnInit {
 
   imgUrl = './assets/ov.png';
 
-  // messagesBarPhone = this.items[0].show;
-  // messagesBarEmail = this.items[1].show;
-  messagesBarPhone = false;
-  messagesBarEmail = false;
   items = [
     {
       name: 'phone',
@@ -33,9 +29,26 @@ export class MainComponent implements OnInit {
   ];
 
   contactClick(str: string) {
-    if (this.items.find((i) => i.show)) {
+    let item = this.items.find((i) => i.name === str);
+    if (!item!.show) {
+      navigator.clipboard.writeText(item!.strClip);
+      item!.show = true;
+      const time = setTimeout(() => {
+        item!.show = false;
+      }, 2000);
+    } else {
+      item!.show = false;
+    }
+  }
+}
+
+/*
+contactClick(str: string) {
+    if (this.items.find((i) => i.show && i.name === str)) {
+      console.log(this.items.find((i) => i.show));
       return;
     }
+
     let item = this.items.find((i) => i.name === str);
     this.messageServ.add(item!.message);
     item!.show = true;
@@ -45,4 +58,4 @@ export class MainComponent implements OnInit {
       item!.show = false;
     }, 2000);
   }
-}
+*/
