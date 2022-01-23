@@ -33,9 +33,13 @@ export class MainComponent implements OnInit {
     if (!item!.show) {
       navigator.clipboard.writeText(item!.strClip);
       item!.show = true;
-      const time = setTimeout(() => {
-        item!.show = false;
-      }, 2000);
+      const t = () => {
+        const time = setTimeout(() => {
+          item!.show = false;
+        }, 2000);
+        return () => clearTimeout(time);
+      };
+      t();
     } else {
       item!.show = false;
     }
