@@ -8,13 +8,19 @@
     <div class="line"></div>
   </div>
   <div class="contacts">
-    <div class="phone item">
+    <div class="phone item messageCont">
+      <div class="message" [class.messageOn]="this.items[0].show">
+        <app-messages></app-messages>
+      </div>
       <img class="contacts_logo" src="./assets/phone.png" alt="phone" />
-      <span>(068) 701-85-11</span>
+      <span (click)="contactClick('phone')">(068) 701-85-11</span>
     </div>
-    <div class="email item">
+    <div class="email item messageCont">
+      <div class="message" [class.messageOn]="this.items[1].show">
+        <app-messages></app-messages>
+      </div>
       <img class="contacts_logo" src="./assets/email.png" alt="phone" />
-      <span>oksanazay@ukr.net</span>
+      <span (click)="contactClick('email')">oksanazay@ukr.net</span>
     </div>
     <div class="fb item">
       <img class="contacts_logo" src="./assets/fb.png" alt="fb" />

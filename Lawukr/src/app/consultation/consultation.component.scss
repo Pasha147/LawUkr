@@ -5,6 +5,8 @@
   height: 100%;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   header {
     margin-bottom: 1rem;
     h1 {
@@ -13,6 +15,13 @@
   }
   .intro {
     font-size: 2rem;
+  }
+  article {
+    // border: 2px solid white;
+    flex: 1 1 auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
   }
   form {
     input,
