@@ -1,3 +1,26 @@
 <div class="awardsCont">
-  <h1>awards works!</h1>
+  <header>
+    <h1>Нагороди</h1>
+  </header>
+  <article>
+    <div class="slider">
+      <div class="sliderWind">
+        <div
+          *ngFor="let slide of this.slider"
+          class="slide"
+          [class.slCurent]="slide.pos === 'cur'"
+          [class.slPrev]="slide.pos === 'prev'"
+          [class.slNext]="slide.pos === 'next'"
+          [class.slAll]="slide.pos === 'all'"
+        >
+          <h2>{{ slide.title }}</h2>
+          <img src="{{ slide.url }}" alt="img" />
+          <p>{{ slide.text }}</p>
+        </div>
+      </div>
+      <div class="buttons">btn</div>
+      <div (click)="this.left()" class="lBtn"></div>
+      <div (click)="this.right()" class="rBtn"></div>
+    </div>
+  </article>
 </div>
