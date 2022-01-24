@@ -28,12 +28,11 @@ export class AppComponent {
     { title: 'Головна', path: 'main' },
     { title: 'Юридична консультація', path: 'consultation' },
     { title: 'Освіта та досвід', path: 'edexp' },
-    { title: 'Нагороди', path: 'awards' },
+    { title: 'Досягнення', path: 'awards' },
     { title: 'Про мене', path: 'edexp' },
     { title: 'Публікації', path: 'edexp' },
   ];
 
- 
   menuOn: boolean = false;
   btnStr: string = '>';
 

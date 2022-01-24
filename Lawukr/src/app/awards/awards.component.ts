@@ -8,18 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class AwardsComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
-    this.sliderOn();
-  }
+  ngOnInit(): void {}
 
-  sliderOn() {}
-
-  left() {
+  sladerMove(direct: string) {
     let leng = this.slider.length;
     let curInd = this.slider.findIndex((i) => i.pos === 'cur');
     let prevInd = 0;
     let nextInd = 0;
-    curInd++;
+    direct === 'left' && curInd++;
+    direct === 'right' && curInd--;
     nextInd = curInd + 1;
     prevInd = curInd - 1;
     if (curInd === leng) {
@@ -30,22 +27,6 @@ export class AwardsComponent implements OnInit {
     if (curInd === leng - 1) {
       nextInd = 0;
     }
-    // console.log(prevInd, ' ', curInd, ' ', nextInd);
-    this.slider.forEach((i) => {
-      i.pos = 'all';
-    });
-    this.slider[prevInd].pos = 'prev';
-    this.slider[curInd].pos = 'cur';
-    this.slider[nextInd].pos = 'next';
-  }
-  right() {
-    let leng = this.slider.length;
-    let curInd = this.slider.findIndex((i) => i.pos === 'cur');
-    let prevInd = 0;
-    let nextInd = 0;
-    curInd--;
-    nextInd = curInd + 1;
-    prevInd = curInd - 1;
     if (curInd === -1) {
       prevInd = leng - 2;
       curInd = leng - 1;
@@ -54,7 +35,6 @@ export class AwardsComponent implements OnInit {
     if (curInd === 0) {
       prevInd = leng - 1;
     }
-    // console.log(prevInd, ' ', curInd, ' ', nextInd);
     this.slider.forEach((i) => {
       i.pos = 'all';
     });
@@ -90,8 +70,32 @@ export class AwardsComponent implements OnInit {
     },
     {
       title: 'Title 5',
-      url: './assets/awards/7.jpg',
+      url: './assets/awards/5.jpg',
       text: 'Text 5',
+      pos: 'all',
+    },
+    {
+      title: 'Title 6',
+      url: './assets/awards/6.jpg',
+      text: 'Text 6',
+      pos: 'all',
+    },
+    {
+      title: 'Title 7',
+      url: './assets/awards/7.jpg',
+      text: 'Text 7',
+      pos: 'all',
+    },
+    {
+      title: 'Title 8',
+      url: './assets/awards/8.jpg',
+      text: 'Text 8',
+      pos: 'all',
+    },
+    {
+      title: 'Title 9',
+      url: './assets/awards/9.jpg',
+      text: 'Text 9',
       pos: 'prev',
     },
   ];
