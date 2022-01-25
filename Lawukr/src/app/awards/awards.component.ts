@@ -74,8 +74,8 @@ export class AwardsComponent implements OnInit {
     let curInd = this.slider.findIndex((i) => i.pos === 'cur');
     let clickInd = this.slider.findIndex((i) => i.url === url);
     let leng = this.slider.length;
-    console.log('1.', prevInd, curInd, nextInd, clickInd, leng);
-    console.log(this.slider);
+    // console.log('1.', prevInd, curInd, nextInd, clickInd, leng);
+    // console.log(this.slider);
 
     this.slider.forEach((i) => {
       i.pos = 'all';
