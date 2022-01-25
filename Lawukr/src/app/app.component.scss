@@ -55,6 +55,16 @@
         }
       }
     }
+
+    .btnCont {
+      z-index: 21;
+      //   border: chartreuse 1px solid;
+      position: absolute;
+      right: -0.5rem;
+      top: 40%;
+      height: 20%;
+      width: $wBtn + 0.75rem;
+    }
     .menuBtn {
       position: absolute;
       right: 0;
