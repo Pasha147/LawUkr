@@ -44,4 +44,9 @@ export const sliderData = [
     url: './assets/awards/9.jpg',
     text: 'Text 9',
   },
+  {
+    title: 'Title 9',
+    url: './assets/awards/10.jpg',
+    text: 'Text 9',
+  },
 ];
