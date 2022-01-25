@@ -71,7 +71,7 @@ export class AwardsComponent implements OnInit {
   clickPict(url: string) {
     let prevInd = this.slider.findIndex((i) => i.pos === 'prev');
     let nextInd = this.slider.findIndex((i) => i.pos === 'next');
-    let curInd = this.slider.findIndex((i) => i.pos === 'cur');
+    // let curInd = this.slider.findIndex((i) => i.pos === 'cur');
     let clickInd = this.slider.findIndex((i) => i.url === url);
     let leng = this.slider.length;
     // console.log('1.', prevInd, curInd, nextInd, clickInd, leng);
