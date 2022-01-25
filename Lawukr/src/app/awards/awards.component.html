@@ -4,7 +4,7 @@
   </header>
   <article>
     <div class="slider">
-      <div class="sliderWind">
+      <div *ngIf="this.slider.length" class="sliderWind">
         <div
           *ngFor="let slide of this.slider"
           class="slide"
@@ -13,14 +13,28 @@
           [class.slNext]="slide.pos === 'next'"
           [class.slAll]="slide.pos === 'all'"
         >
-          <h2>{{ slide.title }}</h2>
+          <!-- <h2>{{ slide.title }}</h2> -->
           <img src="{{ slide.url }}" alt="img" />
-          <p>{{ slide.text }}</p>
+          <!-- <p>{{ slide.text }}</p> -->
         </div>
       </div>
-      <div class="buttons">btn</div>
-      <div (click)="this.sladerMove('left')" class="lBtn"></div>
-      <div (click)="this.sladerMove('right')" class="rBtn"></div>
+      <!-- <div class="buttons"></div> -->
+      <div (click)="this.sladerMove('left')" class="lBtn">
+        <span><</span>
+      </div>
+      <div (click)="this.sladerMove('right')" class="rBtn">
+        <span>></span>
+      </div>
+    </div>
+    <div class="buttons">
+      <div *ngFor="let slide of this.slider" class="item">
+        <img
+          (click)="clickPict(slide.url)"
+          [class.current]="slide.pos === 'cur'"
+          src="{{ slide.url }}"
+          alt="img"
+        />
+      </div>
     </div>
   </article>
 </div>

@@ -1,3 +1,10 @@
+export interface Slider {
+  title: string;
+  url: string;
+  text: string;
+  pos: string;
+}
+
 export interface ConsultForm {
   name: string;
   bearthday: string;
