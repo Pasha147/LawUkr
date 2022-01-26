@@ -1,18 +1,9 @@
+//Досягнення слайдер
 export const sliderData = [
   {
-    title: 'Title 1',
-    url: './assets/awards/1.jpg',
-    text: 'Text 1',
-  },
-  {
-    title: 'Title 2',
-    url: './assets/awards/2.jpg',
-    text: 'Text 2',
-  },
-  {
-    title: 'Title 3',
-    url: './assets/awards/3.jpg',
-    text: 'Text 3',
+    title: 'Title 4',
+    url: './assets/awards/10.jpg',
+    text: 'Text 4',
   },
   {
     title: 'Title 4',
@@ -45,8 +36,53 @@ export const sliderData = [
     text: 'Text 9',
   },
   {
-    title: 'Title 9',
-    url: './assets/awards/10.jpg',
-    text: 'Text 9',
+    title: 'Title 3',
+    url: './assets/awards/3.jpg',
+    text: 'Text 3',
+  },
+  {
+    title: 'Title 2',
+    url: './assets/awards/2.jpg',
+    text: 'Text 2',
+  },
+  {
+    title: 'Title 1',
+    url: './assets/awards/1.jpg',
+    text: 'Text 1',
+  },
+];
+
+export const expData = [
+  {
+    date: 'з серпня 2015р.',
+    institution: 'Київський науково-дослідний інститут незалежних експертиз',
+    position: 'Посада: заступник директора',
+  },
+  {
+    date: 'з травня 2014р. серпень 2015р.',
+    institution: 'Київський науково-дослідний інститут незалежних експертиз',
+    position: 'Посада: старший науковий співробітник;',
+  },
+  {
+    date: 'травень 2009р. —2014р.',
+    institution:
+      'Київський науково-дослідний інститут судових експертиз, лабораторія координації та контролю за експертною діяльністю структурних та регіональних відділень.',
+    position:
+      'Посада: молодший науковий співробітник, з 1 жовтня 2012 року- науковий співробітник',
+  },
+  {
+    date: 'січень 2005 р. — грудень 2009 р.',
+    institution: 'ТОВ “Європейська юридична група”',
+    position: 'Посада: юрист ',
+  },
+  {
+    date: 'січень 2004р. — грудень 2005р.',
+    institution: 'ПП “Дінакор” ',
+    position: 'Посада: юрисконсульт',
+  },
+  {
+    date: 'січень 2000р. — грудень 2004р. ',
+    institution: 'ПП “Дінакор” ',
+    position: 'Посада: секретар',
   },
 ];
