@@ -1,0 +1,22 @@
+.publicCont {
+  $bgc: rgb(255, 253, 132);
+  background: $bgc;
+  color: #8865b9;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0.5rem;
+
+  header {
+    margin-bottom: 0.5rem;
+    h1 {
+      color: #a88fcc;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px black, 0 0 0.5rem rgb(75, 35, 78);
+    }
+  }
+  article {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}

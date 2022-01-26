@@ -10,6 +10,7 @@ import { ConsultationComponent } from './consultation/consultation.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MessagesComponent } from './messages/messages.component';
+import { PublicationsComponent } from './publications/publications.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MessagesComponent } from './messages/messages.component';
     EducationExperienceComponent,
     AwardsComponent,
     ConsultationComponent,
-    MessagesComponent
+    MessagesComponent,
+    PublicationsComponent
   ],
   imports: [
     BrowserModule,

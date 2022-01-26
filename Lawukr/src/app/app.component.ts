@@ -30,7 +30,7 @@ export class AppComponent {
     { title: 'Освіта та досвід', path: 'edexp' },
     { title: 'Досягнення', path: 'awards' },
     { title: 'Про мене', path: 'edexp' },
-    { title: 'Публікації', path: 'edexp' },
+    { title: 'Публікації', path: 'publications' },
   ];
 
   menuOn: boolean = false;
