@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="buttons">
-      <div *ngFor="let slide of this.slider" class="item">
+      <div *ngFor="let slide of this.slider1" class="item">
         <img
           (click)="clickPict(slide.url)"
           [class.current]="slide.pos === 'cur'"

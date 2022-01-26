@@ -15,21 +15,23 @@ export class AwardsComponent implements OnInit {
   }
 
   slider: Slider[] = [];
-
+  slider1: Slider[] = [];
   getSliderData(): void {
     this.getPostService.getSlider().subscribe((sliderData) => {
       this.slider = sliderData.map((i, index) => {
-        if (index === 0) {
+        if (index === sliderData.length - 1) {
           return { ...i, pos: 'cur' };
         }
-        if (index === 1) {
+        if (index === 0) {
           return { ...i, pos: 'next' };
         }
-        if (index === sliderData.length - 1) {
+        if (index === sliderData.length - 2) {
           return { ...i, pos: 'prev' };
         }
         return { ...i, pos: 'all' };
       });
+      this.slider1 = [...this.slider];
+      this.slider1.reverse();
     });
 
     // console.log(this.slider);

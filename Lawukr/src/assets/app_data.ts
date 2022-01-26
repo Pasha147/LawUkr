@@ -1,18 +1,9 @@
+//Досягнення слайдер
 export const sliderData = [
   {
-    title: 'Title 1',
-    url: './assets/awards/1.jpg',
-    text: 'Text 1',
-  },
-  {
-    title: 'Title 2',
-    url: './assets/awards/2.jpg',
-    text: 'Text 2',
-  },
-  {
-    title: 'Title 3',
-    url: './assets/awards/3.jpg',
-    text: 'Text 3',
+    title: 'Title 4',
+    url: './assets/awards/10.jpg',
+    text: 'Text 4',
   },
   {
     title: 'Title 4',
@@ -45,9 +36,19 @@ export const sliderData = [
     text: 'Text 9',
   },
   {
-    title: 'Title 9',
-    url: './assets/awards/10.jpg',
-    text: 'Text 9',
+    title: 'Title 3',
+    url: './assets/awards/3.jpg',
+    text: 'Text 3',
+  },
+  {
+    title: 'Title 2',
+    url: './assets/awards/2.jpg',
+    text: 'Text 2',
+  },
+  {
+    title: 'Title 1',
+    url: './assets/awards/1.jpg',
+    text: 'Text 1',
   },
 ];
 
