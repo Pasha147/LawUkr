@@ -99,3 +99,12 @@ export const expData = [
     position: 'Посада: секретар;',
   },
 ];
+
+//Публікації
+export const publicPict: string[] = [
+  './assets/public/1.jpg',
+  './assets/public/2.jpg',
+  './assets/public/3.jpg',
+  './assets/public/4.jpg',
+  './assets/public/5.jpg',
+];

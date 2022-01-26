@@ -19,4 +19,18 @@
     width: 100%;
     flex: 1 1 auto;
   }
+  .artPict {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid red;
+    .pict {
+      height: 100%;
+      width: 20%;
+      object-fit: cover;
+      display: inline-block;
+      img {
+        width: 90%;
+      }
+    }
+  }
 }

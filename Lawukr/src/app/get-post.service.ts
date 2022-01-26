@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { expData, sliderData } from 'src/assets/app_data';
+import { expData, publicPict, sliderData } from 'src/assets/app_data';
 
 import { ConsultForm, Slider } from './interfaces';
 import { MessageService } from './message.service';
@@ -30,5 +30,10 @@ export class GetPostService {
   getExp(): Observable<any[]> {
     const expd = of(expData);
     return expd;
+  }
+
+  getPublicPict(): Observable<any[]> {
+    const pubPict = of(publicPict);
+    return pubPict;
   }
 }
