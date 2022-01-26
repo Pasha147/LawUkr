@@ -5,17 +5,12 @@
   <div class="linecont">
     <div class="line"></div>
   </div>
-  <article>
+  <article *ngIf="this.expData.length">
     <h2>Досвід роботи:</h2>
-    <div class="place">
-      <p>з серпня 2015р.</p>
-      <h3>Київський науково-дослідний інститут незалежних експертиз</h3>
-      <p>Посада: заступник директора</p>
-    </div>
-    <div class="place">
-      <p>з серпня 2015р.</p>
-      <h3>Київський науково-дослідний інститут незалежних експертиз</h3>
-      <p>Посада: заступник директора</p>
+    <div *ngFor="let item of this.expData" class="place">
+      <p>{{ item.date }}</p>
+      <h3>{{ item.institution }}</h3>
+      <p>{{ item.position }}</p>
     </div>
   </article>
 </div>

@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { sliderData } from 'src/assets/app_data';
+import { expData, sliderData } from 'src/assets/app_data';
 
 import { ConsultForm, Slider } from './interfaces';
 import { MessageService } from './message.service';
@@ -25,5 +25,10 @@ export class GetPostService {
   getSlider(): Observable<any[]> {
     const sld = of(sliderData);
     return sld;
+  }
+
+  getExp(): Observable<any[]> {
+    const expd = of(expData);
+    return expd;
   }
 }

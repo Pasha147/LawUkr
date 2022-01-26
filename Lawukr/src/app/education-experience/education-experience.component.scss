@@ -1,11 +1,16 @@
 .educExpCont {
   background: rgb(216, 151, 190);
-  height: 100%;
+  min-height: 100vh;
   color: #ffffff;
   text-align: center;
   padding: 0.5rem;
   header {
     margin-bottom: 0.5rem;
+    h1 {
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px black, 0 0 0.5rem rgb(76, 10, 82);
+      color: white;
+    }
   }
   .linecont {
     margin-top: 0;
@@ -18,17 +23,20 @@
       margin-bottom: 0.5rem;
       color: rgb(140, 57, 165);
       font-weight: bold;
+      //   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.658);
     }
-    h3 {
-      font-size: 2rem;
-    }
+
     margin-left: 1.25rem;
     margin-right: 0.5rem;
     text-align: start;
-    p {
-      font-size: 1.75rem;
-    }
     .place {
+      p {
+        font-size: 1.75rem;
+      }
+      h3 {
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
       margin: 1rem auto;
       background: rgba(175, 94, 143, 0.692);
       padding: 0.5rem;
