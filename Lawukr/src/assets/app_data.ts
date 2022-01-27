@@ -107,4 +107,6 @@ export const publicPict: string[] = [
   './assets/public/3.jpg',
   './assets/public/4.jpg',
   './assets/public/5.jpg',
+  './assets/public/4.jpg',
+  './assets/public/5.jpg',
 ];

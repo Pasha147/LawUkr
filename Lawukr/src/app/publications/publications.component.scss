@@ -19,18 +19,69 @@
     width: 100%;
     flex: 1 1 auto;
   }
-  .artPict {
+
+  .artPict1 {
+    position: relative;
     width: 100%;
     height: 40vh;
     border: 2px solid red;
     .pict {
-      height: 100%;
-      width: 20%;
-      object-fit: cover;
-      display: inline-block;
+      position: absolute;
+      top: 0;
+
+      height: 10rem;
+      width: 6rem;
+
+      transition: all 0.5s ease-in-out;
+      //   object-fit: cover;
+
       img {
-        width: 90%;
+        height: 100%;
+        border-radius: 0.5rem;
+        box-shadow: -0.25rem 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.397);
       }
+    }
+    .pict_cur {
+      top: 0%;
+      left: 0;
+      width: 100%;
+      //   height: 24rem;
+      border: red 2px solid;
+      z-index: 2;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .artPict {
+    // position: relative;
+    width: 100%;
+    // height: 40vh;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .pict {
+      height: 10rem;
+      width: 6rem;
+
+      transition: all 0.1s ease-in-out;
+      //   object-fit: cover;
+
+      img {
+        width: 100%;
+      }
+    }
+    .pict_cur {
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      width: 100%;
+      //   height: 24rem;
+      border: red 2px solid;
+      z-index: 2;
     }
   }
 }
