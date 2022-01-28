@@ -17,44 +17,59 @@
     }
   }
   .art1 {
+    // border: 2px solid rgb(0, 255, 115);
+
     .artPict1 {
+      margin: 0 auto;
       // overflow-x: hidden;
-      height: fit-content;
+      //   height: fit-content;
       $h: 11rem;
+      $hmax: 80vh;
       position: relative;
       width: 100%;
-
       height: $h;
       // height: auto;
-      border: 2px solid red;
+      //   border: 2px solid red;
       .pict {
         position: absolute;
         top: 0;
-        border: 2px solid red;
-        transition: all 0.6s ease-in-out;
+        // border: 2px solid rgb(0, 255, 34);
+        transition: all 1s ease-in-out;
+        // max-width: 90vw;
+        max-height: $hmax;
+        // display: inline-block;
+        height: -1rem + $h;
+        width: 8.5rem;
+        overflow-x: scroll;
+        padding: 0.5rem;
 
         img {
           transition: all 1s ease-in-out;
-          height: -1rem + $h;
-          object-fit: scale-down;
+          object-fit: cover;
           border-radius: 0.5rem;
-          box-shadow: -0.25rem 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.397);
-          max-width: 95vw;
+          box-shadow: -0.2rem 0 0.2rem 0.2rem rgba(0, 0, 0, 0.397);
+          //   max-width: 95vw;
+          //   border: rgb(255, 0, 179) 2px solid;
+
+          height: 100%;
         }
       }
       .pict_cur {
+        overflow-x: scroll;
         top: 20%;
         left: 0;
         z-index: 2;
         //   height: auto;
-        width: 95vw;
+        width: 100%;
+        height: $hmax;
+        // height: auto;
 
         //   border: rgb(4, 0, 255) 2px solid;
         img {
           // border: rgb(255, 0, 179) 2px solid;
-          height: 80vh;
-          border-radius: 0;
-          box-shadow: none;
+          //   height: 80vh;
+          //   border-radius: 0;
+          //   box-shadow: none;
           // box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 0);
         }
       }

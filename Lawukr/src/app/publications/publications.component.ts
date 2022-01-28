@@ -19,7 +19,7 @@ export class PublicationsComponent implements OnInit {
         return {
           url: item,
           show: 'small',
-          left: `${Math.round((100 * index) / (dan.length + 2))}%`,
+          left: `${Math.round((80 * index) / dan.length) + 5}%`,
         };
       });
     });
