@@ -10,7 +10,9 @@
   header {
     margin-bottom: 1rem;
     h1 {
-      text-shadow: 0 0 2px #ffffff;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px black, 0 0 0.5rem rgb(10, 74, 82);
+      //   text-shadow: 0 0 2px #ffffff;
     }
   }
   .intro {
