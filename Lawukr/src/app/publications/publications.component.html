@@ -2,25 +2,12 @@
   <header>
     <h1>Публікації</h1>
   </header>
-  <!-- 
-  <article class="artPict">
-    <div
-      (click)="clickPict(item.url)"
-      *ngFor="let item of this.pubPict"
-      class="pict"
-      [hidden]="item.show === 'hid'"
-      [class.pict_cur]="item.show === 'cur'"
-    >
-      <img src="{{ item.url }}" alt="img" />
-    </div>
-  </article>
-  -->
   <article class="art1">
     <div class="artPict1">
       <div
+        class="pict"
         *ngFor="let item of this.pubPict1"
         (click)="clickPict1(item.url)"
-        class="pict"
         [style.left]="item.show === 'small' ? item.left : ''"
         [class.pict_cur]="item.show === 'cur'"
       >
@@ -28,5 +15,14 @@
       </div>
     </div>
   </article>
-  <article class="artPublic"></article>
+  <div class="linecont">
+    <div class="line"></div>
+  </div>
+  <article class="art2">
+    <div class="place" *ngFor="let item of this.publics">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.author }}</p>
+      <p>{{ item.reference }}</p>
+    </div>
+  </article>
 </div>

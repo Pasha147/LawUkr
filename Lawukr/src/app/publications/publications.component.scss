@@ -24,7 +24,7 @@
       // overflow-x: hidden;
       //   height: fit-content;
       $h: 11rem;
-      $hmax: 80vh;
+      $hmax: 85vh;
       position: relative;
       width: 100%;
       height: $h;
@@ -38,7 +38,7 @@
         // max-width: 90vw;
         max-height: $hmax;
         // display: inline-block;
-        height: -1rem + $h;
+        height: -0.5rem + $h;
         width: 8.5rem;
         overflow-x: scroll;
         padding: 0.5rem;
@@ -65,34 +65,28 @@
       }
     }
   }
-
-  .artPict {
-    // position: relative;
-    width: 100%;
-    // height: 40vh;
-    border: 2px solid red;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    .pict {
-      height: 10rem;
-      width: 6rem;
-
-      transition: all 0.1s ease-in-out;
-      //   object-fit: cover;
-
-      img {
-        width: 100%;
+  .art2 {
+    .place {
+      margin: 1rem auto;
+      //   background: rgba(175, 94, 143, 0.692);
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.377);
+      background: rgba(248, 248, 241, 0.856);
+      p {
+        font-size: 1.5rem;
+      }
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
       }
     }
-    .pict_cur {
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-      width: 100%;
-      //   height: 24rem;
-      border: red 2px solid;
-      z-index: 2;
+  }
+  .linecont {
+    margin: 0 auto;
+    .line {
+      box-shadow: 0 0 0.25rem 0.1rem #0200055e;
+      background: #8865b9;
     }
   }
 }
