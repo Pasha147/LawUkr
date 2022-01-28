@@ -1,7 +1,15 @@
 .mainCont {
   //   background: radial-gradient(at 50% 70%, #ffffff 10px, rgb(182, 136, 219) 50%);
   //   background: rgb(182, 136, 219);
-  background: rgb(209, 175, 236);
+  //   background: rgb(209, 175, 236);
+
+  background: linear-gradient(
+      217deg,
+      rgb(113, 80, 141),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgb(209, 175, 236), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgb(209, 175, 236), rgba(0, 0, 255, 0) 70.71%);
 
   color: #ffffff;
   text-align: center;
@@ -11,22 +19,26 @@
   flex-direction: column;
   justify-content: space-between;
   h1 {
+    font-size: 4rem;
     text-shadow: 0 0 2px #ffffff;
   }
   .logoCont {
     height: 18rem;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     .logoImg {
-      background: white;
-      border: #ffffffb6 solid 2px;
-      border-radius: 50%;
-      box-shadow: 0 0 30px 20px white;
-      display: block;
-      //   border: hotpink solid 2px;
-      margin: 0 auto;
-      height: 100%;
+      width: 100%;
       object-fit: cover;
+      //   box-shadow: 0 0 1rem 1rem rgba(255, 255, 255, 0.897);
+      //   background: white;
+      //   border: #ffffffb6 solid 2px;
+      //   border-radius: 50%;
+      //   box-shadow: 0 0 30px 20px white;
+      //   display: block;
+      //   //   border: hotpink solid 2px;
+      //   margin: 0 auto;
+      //   height: 100%;
+      //   object-fit: cover;
     }
   }
   h2 {

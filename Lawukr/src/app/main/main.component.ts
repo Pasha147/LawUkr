@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  imgUrl = './assets/ov.png';
+  imgUrl = './assets/main.jpg';
 
   items = [
     {
