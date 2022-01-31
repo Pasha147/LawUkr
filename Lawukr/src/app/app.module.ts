@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MessagesComponent } from './messages/messages.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PublicationsComponent } from './publications/publications.component';
     AwardsComponent,
     ConsultationComponent,
     MessagesComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

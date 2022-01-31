@@ -29,7 +29,7 @@ export class AppComponent {
     { title: 'Юридична консультація', path: 'consultation' },
     { title: 'Досвід та освіта', path: 'edexp' },
     { title: 'Досягнення', path: 'awards' },
-    { title: 'Про мене', path: 'edexp' },
+    { title: 'Про мене', path: 'aboutme' },
     { title: 'Публікації', path: 'publications' },
   ];
 
