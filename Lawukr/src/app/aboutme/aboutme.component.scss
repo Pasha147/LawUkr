@@ -1,0 +1,29 @@
+.aboutCont {
+  $bgc: rgb(180, 204, 255);
+  background: $bgc;
+  color: #8865b9;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0.5rem;
+  overflow-x: hidden;
+
+  header {
+    margin-bottom: 0.5rem;
+    h1 {
+      color: #a88fcc;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px black, 0 0 0.5rem rgb(70, 78, 35);
+    }
+  }
+  .art1 {
+    border: red 2px solid;
+    .imgCont {
+      height: 40vh;
+    }
+  }
+  .art2 {
+    border: red 2px solid;
+    height: 30vh;
+  }
+}

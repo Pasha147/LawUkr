@@ -134,3 +134,19 @@ export const publics = [
       'Участь у Всеукраїнській науково-практиній конференції «Модернізація України: проблеми та технології успішності» проведеної Міжрегіональною Академією управління персоналом та публікація тез доповіді.',
   },
 ];
+
+export const aboutMeData = [
+  {
+    img: './img/projects/6.jpg',
+    name: 'Matlab',
+
+    position1: {
+      bottom: '50%',
+      left: '50%',
+      transform: 'rotate(5deg) ',
+    },
+
+    header: 'Finite Element Method',
+    text: [],
+  },
+];
