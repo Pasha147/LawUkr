@@ -137,16 +137,29 @@ export const publics = [
 
 export const aboutMeData = [
   {
-    img: './img/projects/6.jpg',
+    img: './assets/public/1.jpg',
     name: 'Matlab',
 
-    position1: {
-      bottom: '50%',
-      left: '50%',
+    position: {
+      bottom: '10%',
+      left: '20%',
       transform: 'rotate(5deg) ',
     },
 
-    header: 'Finite Element Method',
-    text: [],
+    header: 'Element Method',
+    text: ['Auto import from @angular/common function getLocaleE'],
+  },
+  {
+    img: './assets/public/2.jpg',
+    name: 'asdfasdf',
+
+    position: {
+      bottom: '20%',
+      left: '60%',
+      transform: 'rotate(-5deg) ',
+    },
+
+    header: 'Finite ',
+    text: ['Finite Element Method'],
   },
 ];

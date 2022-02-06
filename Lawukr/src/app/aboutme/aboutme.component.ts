@@ -16,8 +16,13 @@ export class AboutmeComponent implements OnInit {
   getAboutMeData(): void {
     this.getPostService.getAboutMeData().subscribe((data) => {
       this.aboutMeData = data;
+      // console.log(this.aboutMeData);
     });
   }
 
   aboutMeData: any[] = [];
+  curItem = 0;
+  imgClick(i: number) {
+    this.curItem = i;
+  }
 }

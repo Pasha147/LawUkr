@@ -3,10 +3,24 @@
     <h1>Про мене</h1>
   </header>
   <article class="art1">
-    <div class="imgCont"></div>
+    <div class="imgCont">
+      <img
+        *ngFor="let item of this.aboutMeData; let i = index"
+        [style.left]="item.position.left"
+        [style.bottom]="item.position.bottom"
+        [style.transform]="item.position.transform"
+        (click)="imgClick(i)"
+        src=" {{ item.img }}"
+        alt="img"
+      />
+    </div>
   </article>
   <div class="linecont">
     <div class="line"></div>
   </div>
-  <article class="art2"></article>
+  <article class="art2">
+    <h3>{{ this.aboutMeData[this.curItem].header }}</h3>
+    <img src="{{ this.aboutMeData[this.curItem].img }}" alt="" />
+    <p *ngFor="let item of this.aboutMeData[this.curItem].text">{{ item }}</p>
+  </article>
 </div>

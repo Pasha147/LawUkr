@@ -19,11 +19,22 @@
   .art1 {
     border: red 2px solid;
     .imgCont {
-      height: 40vh;
+      height: 30vh;
+      position: relative;
+      img {
+        position: absolute;
+        width: 8rem;
+        height: 10rem;
+      }
     }
   }
   .art2 {
     border: red 2px solid;
-    height: 30vh;
+    img {
+      display: block;
+      border: green 2px solid;
+      margin: 0.5rem auto;
+      height: 60vh;
+    }
   }
 }
