@@ -137,29 +137,81 @@ export const publics = [
 
 export const aboutMeData = [
   {
-    img: './assets/public/1.jpg',
-    name: 'Matlab',
+    img: './assets/aboutme/1.jpg',
+    name: 'Me',
 
     position: {
-      bottom: '10%',
+      bottom: '42%',
+      left: '3%',
+      transform: 'rotate(5deg) ',
+    },
+
+    header: '1',
+    text: ['Me'],
+  },
+  {
+    img: './assets/aboutme/2.jpg',
+    name: 'Me',
+
+    position: {
+      bottom: '1%',
+      left: '1%',
+      transform: 'rotate(-5deg) ',
+    },
+
+    header: '2',
+    text: ['Me'],
+  },
+  {
+    img: './assets/aboutme/3.jpg',
+    name: 'Me',
+
+    position: {
+      bottom: '40%',
       left: '20%',
       transform: 'rotate(5deg) ',
     },
 
-    header: 'Element Method',
-    text: ['Auto import from @angular/common function getLocaleE'],
+    header: '3',
+    text: ['Me'],
   },
   {
-    img: './assets/public/2.jpg',
-    name: 'asdfasdf',
+    img: './assets/aboutme/4.jpg',
+    name: 'Me',
 
     position: {
-      bottom: '20%',
-      left: '60%',
+      bottom: '3%',
+      left: '25%',
+      transform: 'rotate(5deg) ',
+    },
+
+    header: '4',
+    text: ['Me'],
+  },
+  {
+    img: './assets/aboutme/5.jpg',
+    name: 'Me',
+
+    position: {
+      bottom: '40%',
+      left: '55%',
       transform: 'rotate(-5deg) ',
     },
 
-    header: 'Finite ',
-    text: ['Finite Element Method'],
+    header: '5',
+    text: ['Me'],
+  },
+  {
+    img: './assets/aboutme/6.jpg',
+    name: 'Me',
+
+    position: {
+      bottom: '2%',
+      left: '70%',
+      transform: 'rotate(-5deg) ',
+    },
+
+    header: '6',
+    text: ['Me'],
   },
 ];
